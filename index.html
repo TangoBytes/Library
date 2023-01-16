@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Library</h1>
+            <button id="add-card-button">Add Book</button>
+        </div>
+
+        <div id="card-grid" class="card-grid">
+            <!-- Add more cards here -->
+        </div>
+
+        <!-- Create the popup -->
+        <div id="add-card-popup" class="popup hidden">
+            <div class="popup-content">
+                <form id="add-card-form">
+                    <h2>Add a Book</h2>
+                    <label for="book-title-input">Book Title:</label><br />
+                    <input type="text" id="book-title-input" /><br />
+                    <label for="book-author-input">Book Author:</label><br />
+                    <input type="text" id="book-author-input" /><br />
+                    <label for="description-input">Description:</label><br />
+                    <textarea id="description-input"></textarea><br />
+                    <span
+                        ><label for="book-read-input">Read:</label>
+                        <input type="checkbox" id="book-read-input" /></span
+                    ><br />
+                    <button id="submit-button" type="submit">Submit</button>
+                    <button id="cancel-button">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
